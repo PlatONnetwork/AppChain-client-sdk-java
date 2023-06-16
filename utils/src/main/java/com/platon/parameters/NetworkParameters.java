@@ -144,7 +144,7 @@ public class NetworkParameters {
     }
 
     public enum ReservedHrp {
-        PlatON("lat"),
+        PlatON("hsk"),
         Alaya("atp");
 
         private final String hrp;
@@ -157,7 +157,7 @@ public class NetworkParameters {
     }
 
     public enum ReservedChainId {
-        PlatON(210425L),
+        PlatON(230615L),
         Alaya(201018L);
 
         private final long chainId;
