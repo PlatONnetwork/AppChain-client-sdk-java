@@ -1,6 +1,6 @@
 buildscript {
     ext.bouncycastleVersion = '1.54'
-    ext.jacksonVersion = '2.8.5'
+    ext.jacksonVersion = '2.11.4'
     ext.javapoetVersion = '1.7.0'
     ext.jnr_unixsocketVersion = '0.15'
     ext.okhttpVersion = '3.8.1'

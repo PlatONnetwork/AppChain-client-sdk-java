@@ -10,6 +10,9 @@ public class Node {
     @JSONField(name = "NodeId")
     private String nodeId;
 
+    @JSONField(name = "ValidatorId")
+    private String validatorId;
+
     @JSONField(name = "StakingAddress")
     private String stakingAddress;
 
@@ -121,6 +124,14 @@ public class Node {
         } else {
             this.delegateRewardTotal = BigInteger.ZERO;
         }
+    }
+
+    public String getValidatorId() {
+        return validatorId;
+    }
+
+    public void setValidatorId(String validatorId) {
+        this.validatorId = validatorId;
     }
 
     public String getNodeId() {
@@ -310,6 +321,7 @@ public class Node {
     public String toString() {
         return "Node{" +
                 "nodeId='" + nodeId + '\'' +
+                ", validatorId='" + validatorId + '\'' +
                 ", stakingAddress='" + stakingAddress + '\'' +
                 ", benifitAddress='" + benifitAddress + '\'' +
                 ", rewardPer=" + rewardPer +
