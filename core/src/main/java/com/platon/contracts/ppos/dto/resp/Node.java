@@ -11,7 +11,7 @@ public class Node {
     private String nodeId;
 
     @JSONField(name = "ValidatorId")
-    private String validatorId;
+    private BigInteger validatorId;
 
     @JSONField(name = "StakingAddress")
     private String stakingAddress;
@@ -126,11 +126,11 @@ public class Node {
         }
     }
 
-    public String getValidatorId() {
+    public BigInteger getValidatorId() {
         return validatorId;
     }
 
-    public void setValidatorId(String validatorId) {
+    public void setValidatorId(BigInteger validatorId) {
         this.validatorId = validatorId;
     }
 
