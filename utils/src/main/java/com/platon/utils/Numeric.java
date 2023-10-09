@@ -28,12 +28,22 @@ public final class Numeric {
     }
 
     public static BigInteger decodeQuantity(String value) {
+        if (value ==null ){
+            throw new MessageDecodingException("Value is null");
+        }
+        if ("".equals(value.trim())){
+            throw new MessageDecodingException("Value is empty");
+        }
+        if ("0x".equals(value.trim())){
+            throw new MessageDecodingException("Value is \"0x\"");
+        }
+
         if (isLongValue(value)) {
             return BigInteger.valueOf(Long.parseLong(value));
         }
 
         if (!isValidHexQuantity(value)) {
-            throw new MessageDecodingException("Value must be in format 0x[1-9]+[0-9]* or 0x0");
+            throw new MessageDecodingException("Value must be in format 0x[1-9]+[0-9]* or 0x0. value:" + value);
         }
         try {
             return parsePaddedNumberHex(value);
@@ -131,7 +141,7 @@ public final class Numeric {
     public static String toHexStringWithPrefixZeroPadded(BigInteger value, int size) {
         return toHexStringZeroPadded(value, size, true);
     }
-    
+
     public static String toHexStringWithPrefixSafe(BigInteger value) {
         String result = toHexStringNoPrefix(value);
         if (result.length() < 2) {

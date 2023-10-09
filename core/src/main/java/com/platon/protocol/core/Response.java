@@ -3,6 +3,8 @@ package com.platon.protocol.core;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.platon.protocol.deserializer.KeepAsJsonDeserialzier;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Our common JSON-RPC response type.
@@ -11,6 +13,9 @@ import com.platon.protocol.deserializer.KeepAsJsonDeserialzier;
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Response<T> {
+
+    private static final Logger log = LoggerFactory.getLogger(Response.class);
+
     private long id;
     private String jsonrpc;
     private T result;
@@ -37,6 +42,7 @@ public class Response<T> {
     }
 
     public T getResult() {
+        log.debug("result: {}", result);
         return result;
     }
 
