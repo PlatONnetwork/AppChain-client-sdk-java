@@ -1,5 +1,6 @@
 package com.platon.protocol.core;
 
+import com.alibaba.fastjson.JSON;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.platon.protocol.deserializer.KeepAsJsonDeserialzier;
@@ -42,7 +43,7 @@ public class Response<T> {
     }
 
     public T getResult() {
-        log.debug("result: {}", result);
+        log.debug("result: {}", JSON.toJSONString(result));
         return result;
     }
 
