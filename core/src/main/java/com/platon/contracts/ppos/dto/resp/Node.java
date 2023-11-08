@@ -7,79 +7,79 @@ import java.math.BigInteger;
 
 public class Node {
 
-    @JSONField(name = "NodeId")
+    @JSONField(name = "NodeId", alternateNames = {"nodeId"})
     private String nodeId;
 
-    @JSONField(name = "ValidatorId")
+    @JSONField(name = "ValidatorId", alternateNames = {"validatorId"})
     private BigInteger validatorId;
 
-    @JSONField(name = "StakingAddress")
+    @JSONField(name = "StakingAddress", alternateNames = {"stakingAddress"})
     private String stakingAddress;
 
-    @JSONField(name = "BenefitAddress")
+    @JSONField(name = "BenefitAddress", alternateNames = {"benefitAddress"})
     private String benifitAddress;
 
-    @JSONField(name = "RewardPer")
+    @JSONField(name = "RewardPer", alternateNames = {"rewardPer"})
     private BigInteger rewardPer;
 
-    @JSONField(name = "NextRewardPer")
+    @JSONField(name = "NextRewardPer", alternateNames = {"nextRewardPer"})
     private BigInteger nextRewardPer;
 
-    @JSONField(name = "StakingTxIndex")
+    @JSONField(name = "StakingTxIndex", alternateNames = {"stakingTxIndex"})
     private BigInteger stakingTxIndex;
 
-    @JSONField(name = "ProgramVersion")
+    @JSONField(name = "ProgramVersion", alternateNames = {"programVersion"})
     private BigInteger programVersion;
 
-    @JSONField(name = "Status")
+    @JSONField(name = "Status", alternateNames = {"status"})
     private BigInteger status;
 
-    @JSONField(name = "StakingEpoch")
+    @JSONField(name = "StakingEpoch", alternateNames = {"stakingEpoch"})
     private BigInteger stakingEpoch;
 
-    @JSONField(name = "StakingBlockNum")
+    @JSONField(name = "StakingBlockNum", alternateNames = {"stakingBlockNum"})
     private BigInteger stakingBlockNum;
 
-    @JSONField(name = "Shares")
+    @JSONField(name = "Shares", alternateNames = {"shares"})
     private BigInteger shares;
 
-    @JSONField(name = "Released")
+    @JSONField(name = "Released", alternateNames = {"released"})
     private BigInteger released;
 
-    @JSONField(name = "ReleasedHes")
+    @JSONField(name = "ReleasedHes", alternateNames = {"releasedHes"})
     private BigInteger releasedHes;
 
-    @JSONField(name = "RestrictingPlan")
+    @JSONField(name = "RestrictingPlan", alternateNames = {"restrictingPlan"})
     private BigInteger restrictingPlan;
 
-    @JSONField(name = "RestrictingPlanHes")
+    @JSONField(name = "RestrictingPlanHes", alternateNames = {"restrictingPlanHes"})
     private BigInteger restrictingPlanHes;
 
-    @JSONField(name = "ExternalId")
+    @JSONField(name = "ExternalId", alternateNames = {"externalId"})
     private String externalId;
 
-    @JSONField(name = "NodeName")
+    @JSONField(name = "NodeName", alternateNames = {"nodeName"})
     private String nodeName;
 
-    @JSONField(name = "Website")
+    @JSONField(name = "Website", alternateNames = {"website"})
     private String website;
 
-    @JSONField(name = "Details")
+    @JSONField(name = "Details", alternateNames = {"details"})
     private String details;
 
-    @JSONField(name = "ValidatorTerm")
+    @JSONField(name = "ValidatorTerm", alternateNames = {"validatorTerm"})
     private BigInteger validatorTerm;
 
-    @JSONField(name = "DelegateEpoch")
+    @JSONField(name = "DelegateEpoch", alternateNames = {"delegateEpoch"})
     private BigInteger delegateEpoch;
 
-    @JSONField(name = "DelegateTotal")
+    @JSONField(name = "DelegateTotal", alternateNames = {"delegateTotal"})
     private BigInteger delegateTotal;
 
-    @JSONField(name = "DelegateTotalHes")
+    @JSONField(name = "DelegateTotalHes", alternateNames = {"delegateTotalHes"})
     private BigInteger delegateTotalHes;
 
-    @JSONField(name = "DelegateRewardTotal")
+    @JSONField(name = "DelegateRewardTotal", alternateNames = {"delegateRewardTotal"})
     private BigInteger delegateRewardTotal;
 
     public BigInteger getDelegateEpoch() {
