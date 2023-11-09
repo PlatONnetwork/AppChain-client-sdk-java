@@ -16,6 +16,7 @@ import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Block object returned by:
@@ -313,6 +314,9 @@ public class PlatonBlock extends Response<PlatonBlock.Block> {
         }
 
         public String getNodeId() {
+            if(Objects.equals(this.getNumber(), BigInteger.ZERO)){
+                return "000000000000000000000000000000000";
+            }
         	return NodeIdTool.getPublicKey(this);
         }
 
