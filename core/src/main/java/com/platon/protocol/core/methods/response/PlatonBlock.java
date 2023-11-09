@@ -58,7 +58,7 @@ public class PlatonBlock extends Response<PlatonBlock.Block> {
         private String author;
         private String miner;
         private String mixHash;
-        private String difficulty;
+        //private String difficulty;
         private String totalDifficulty;
         private String extraData;
         private String size;
@@ -74,8 +74,8 @@ public class PlatonBlock extends Response<PlatonBlock.Block> {
 
         public Block(String number, String hash, String parentHash, String nonce,
                      String sha3Uncles, String logsBloom, String transactionsRoot,
-                     String stateRoot, String receiptsRoot, String author, String miner, 
-                     String mixHash, String difficulty, String totalDifficulty, String extraData, 
+                     String stateRoot, String receiptsRoot, String author, String miner,
+                     String mixHash, String totalDifficulty, String extraData,
                      String size, String gasLimit, String gasUsed, String timestamp,
                      List<TransactionResult> transactions, List<String> uncles,
                      List<String> sealFields) {
@@ -91,7 +91,7 @@ public class PlatonBlock extends Response<PlatonBlock.Block> {
             this.author = author;
             this.miner = miner;
             this.mixHash = mixHash;
-            this.difficulty = difficulty;
+            //this.difficulty = difficulty;
             this.totalDifficulty = totalDifficulty;
             this.extraData = extraData;
             this.size = size;
@@ -207,7 +207,7 @@ public class PlatonBlock extends Response<PlatonBlock.Block> {
             this.mixHash = mixHash;
         }
 
-        public BigInteger getDifficulty() {
+        /*public BigInteger getDifficulty() {
             return Numeric.decodeQuantity(difficulty);
         }
 
@@ -217,7 +217,7 @@ public class PlatonBlock extends Response<PlatonBlock.Block> {
 
         public void setDifficulty(String difficulty) {
             this.difficulty = difficulty;
-        }
+        }*/
 
         public BigInteger getTotalDifficulty() {
             return Numeric.decodeQuantity(totalDifficulty);
@@ -311,7 +311,7 @@ public class PlatonBlock extends Response<PlatonBlock.Block> {
         public void setSealFields(List<String> sealFields) {
             this.sealFields = sealFields;
         }
-        
+
         public String getNodeId() {
         	return NodeIdTool.getPublicKey(this);
         }
@@ -380,11 +380,11 @@ public class PlatonBlock extends Response<PlatonBlock.Block> {
                     ? !getMixHash().equals(block.getMixHash()) : block.getMixHash() != null) {
                 return false;
             }
-            if (getDifficultyRaw() != null
+            /*if (getDifficultyRaw() != null
                     ? !getDifficultyRaw().equals(block.getDifficultyRaw())
                     : block.getDifficultyRaw() != null) {
                 return false;
-            }
+            }*/
             if (getTotalDifficultyRaw() != null
                     ? !getTotalDifficultyRaw().equals(block.getTotalDifficultyRaw())
                     : block.getTotalDifficultyRaw() != null) {
@@ -443,7 +443,7 @@ public class PlatonBlock extends Response<PlatonBlock.Block> {
             result = 31 * result + (getAuthor() != null ? getAuthor().hashCode() : 0);
             result = 31 * result + (getMiner() != null ? getMiner().hashCode() : 0);
             result = 31 * result + (getMixHash() != null ? getMixHash().hashCode() : 0);
-            result = 31 * result + (getDifficultyRaw() != null ? getDifficultyRaw().hashCode() : 0);
+            //result = 31 * result + (getDifficultyRaw() != null ? getDifficultyRaw().hashCode() : 0);
             result = 31 * result
                     + (getTotalDifficultyRaw() != null ? getTotalDifficultyRaw().hashCode() : 0);
             result = 31 * result + (getExtraData() != null ? getExtraData().hashCode() : 0);

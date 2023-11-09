@@ -424,7 +424,7 @@ public class ResponseTest extends ResponseTester {
                         + "    \"author\": \"0x1a95ad5ccdb0677af951810c6ddf4935afe4e5a6\",\n"
                         + "    \"miner\": \"0x4e65fda2159562a496f9f3522f89122a3088497a\",\n"
                         + "    \"mixHash\": \"0x57919c4e72e79ad7705a26e7ecd5a08ff546ac4fa37882e9cc57be87a3dab26b\",\n"
-                        + "    \"difficulty\": \"0x027f07\",\n"
+                        //+ "    \"difficulty\": \"0x027f07\",\n"
                         + "    \"totalDifficulty\":  \"0x027f07\",\n"
                         + "    \"extraData\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",\n"
                         + "    \"size\":  \"0x027f07\",\n"
@@ -462,7 +462,7 @@ public class ResponseTest extends ResponseTester {
                 "0x1a95ad5ccdb0677af951810c6ddf4935afe4e5a6",
                 "0x4e65fda2159562a496f9f3522f89122a3088497a",
                 "0x57919c4e72e79ad7705a26e7ecd5a08ff546ac4fa37882e9cc57be87a3dab26b",
-                "0x027f07",
+                //"0x027f07",
                 "0x027f07",
                 "0x0000000000000000000000000000000000000000000000000000000000000000",
                 "0x027f07",
@@ -508,7 +508,7 @@ public class ResponseTest extends ResponseTester {
                         + "    \"author\": \"0x1a95ad5ccdb0677af951810c6ddf4935afe4e5a6\",\n"
                         + "    \"miner\": \"0x4e65fda2159562a496f9f3522f89122a3088497a\",\n"
                         + "    \"mixHash\": \"0x57919c4e72e79ad7705a26e7ecd5a08ff546ac4fa37882e9cc57be87a3dab26b\",\n"
-                        + "    \"difficulty\": \"0x027f07\",\n"
+                        //+ "    \"difficulty\": \"0x027f07\",\n"
                         + "    \"totalDifficulty\":  \"0x027f07\",\n"
                         + "    \"extraData\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",\n"
                         + "    \"size\":  \"0x027f07\",\n"
@@ -561,7 +561,7 @@ public class ResponseTest extends ResponseTester {
                 "0x1a95ad5ccdb0677af951810c6ddf4935afe4e5a6",
                 "0x4e65fda2159562a496f9f3522f89122a3088497a",
                 "0x57919c4e72e79ad7705a26e7ecd5a08ff546ac4fa37882e9cc57be87a3dab26b",
-                "0x027f07",
+                //"0x027f07",
                 "0x027f07",
                 "0x0000000000000000000000000000000000000000000000000000000000000000",
                 "0x027f07",
@@ -676,7 +676,7 @@ public class ResponseTest extends ResponseTester {
                 "0x1a95ad5ccdb0677af951810c6ddf4935afe4e5a6",
                 "0x4e65fda2159562a496f9f3522f89122a3088497a",
                 "0x57919c4e72e79ad7705a26e7ecd5a08ff546ac4fa37882e9cc57be87a3dab26b",
-                "0x027f07",
+                //"0x027f07",
                 "0x027f07",
                 "0x0000000000000000000000000000000000000000000000000000000000000000",
                 "0x027f07",
